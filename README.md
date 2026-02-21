@@ -10,9 +10,9 @@ Run all scripts in **pgAdmin** using **Query Tool**: connect to your database �
 
 | Step | Script | When |
 |------|--------|------|
-| 1 | `Day1/sql initiate.sql` | Run **first** if the database has no `students` and `activities` tables/data. |
-| 2 | `Day1/migration.sql` | Run **once** after tables and data exist. |
-| 3 | `Day1/rollback.sql` | **Optional:** run only to undo the migration (backup tables must still exist). |
+| 1 | `/sql initiate.sql` | Run **first** if the database has no `students` and `activities` tables/data. |
+| 2 | `/migration.sql` | Run **once** after tables and data exist. |
+| 3 | `/rollback.sql` | **Optional:** run only to undo the migration (backup tables must still exist). |
 
 **Summary:** If the DB is empty or missing the tables → run **sql initiate.sql**, then **migration.sql**. If the DB already has the original tables → run only **migration.sql**. To revert → **rollback.sql**.
 
